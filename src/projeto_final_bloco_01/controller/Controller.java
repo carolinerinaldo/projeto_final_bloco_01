@@ -43,5 +43,10 @@ public class Controller implements Repository {
             System.out.println("Produto não encontrado.");
         }
 	}
+	
+	public List<Produto> getProdutos() {
+        return produtos;
+	}
+	
 
 }
