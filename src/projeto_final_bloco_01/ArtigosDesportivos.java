@@ -65,21 +65,20 @@ public class ArtigosDesportivos {
 				break;
 			case 3:
 				System.out.println("Atualizar produtos\n\n");
-				System.out.println("Digite o nome do produto para atualizar:");
-				leia.nextLine();
-				nome = leia.nextLine();
-		        Produto produto = controller.buscarPorNome(nome);
-		        if (produto != null) {
-		            System.out.println("Digite o novo estoque:");
-		            estoque = leia.nextInt();
-		            leia.nextLine();
-		            produto.setEstoque(estoque);
-		            System.out.println("Estoque atualizado.");
-		        } else {
-		            System.out.println("Produto não encontrado.");
-		        }
-
-				break;
+			    System.out.println("Digite o nome do produto para atualizar:");
+			    leia.nextLine();
+			    nome = leia.nextLine();
+			    Produto produto = controller.buscarPorNome(nome);
+			    if (produto != null) {
+			        System.out.println("Digite o novo estoque:");
+			        estoque = leia.nextInt();
+			        leia.nextLine();
+			        produto.setEstoque(estoque);
+			        System.out.println("Produto atualizado!");
+			    } else {
+			        System.out.println("Produto não encontrado.");
+			    }
+			    break;
 			case 4:
 				System.out.println("Excluir/deletar produtos\n\n");
 				System.out.println("Digite o nome do produto que deseja remover: ");
