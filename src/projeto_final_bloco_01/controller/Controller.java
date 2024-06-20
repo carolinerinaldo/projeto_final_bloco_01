@@ -17,7 +17,7 @@ public class Controller implements Repository {
 
 	@Override
 	public void retirar(Produto produto) {
-		produtos.remove(produtos);
+		produtos.remove(produto);
 		System.out.println("Produto retirado");
 		
 	}

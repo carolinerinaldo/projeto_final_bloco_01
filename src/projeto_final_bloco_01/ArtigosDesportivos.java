@@ -1,6 +1,9 @@
 package projeto_final_bloco_01;
 
 import java.util.Scanner;
+import projeto_final_bloco_01.controller.Controller;
+import projeto_final_bloco_01.model.EquipamentoDesportivo;
+import projeto_final_bloco_01.model.Produto;
 
 public class ArtigosDesportivos {
 
